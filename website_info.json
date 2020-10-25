@@ -1,0 +1,21 @@
+{
+  "edits":
+  {
+    "local_server":"True",
+    "local_uri":"mysql://root:@localhost/newdatabase",
+    "prod_uri": "mysql://root:@localhost/newdatabase",
+    "fb_link": "https://www.facebook.com/prabhudatta.prasad",
+    "tw_link": "https://www.twitter.com",
+    "ig_link": "https://www.instagram.com/p_d_p_007/",
+    "blog_heading": "PRABHUDATTA PRASAD",
+    "sub_heading": "Welcome To My Official Website!",
+    "mail_id": "enter your gmail id here",
+    "mail_pass": "enter your password here",
+    "about_text": "Hi,This is prabhudatta prasad,in my journey to becme a fullstack web developer this website is my first small step\ntowards web developing.This blog website is created using flask webframework\n wish me luck",
+    "user_name": "prabhudatta",
+    "user_pass": "password",
+    "upload_location": "C:\\Users\\lenovo\\PycharmProjects\\firstproj\\PYTHONFLASK-LEARNING\\static\\img",
+    "homepage_post_no" : 3
+
+  }
+}

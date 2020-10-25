@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+{% block body%}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static',filename='img/home2.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{edits["about_text"]}}
+        <p>I am a talented, ambitious and hardworking individual, with broad skills and experience in digital and printed marketing, social media and leading projects.</p>
+        <p>Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure.</p>
+        <p>A key strength is communication; building strong relationships with people in order to deliver the best results.</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+

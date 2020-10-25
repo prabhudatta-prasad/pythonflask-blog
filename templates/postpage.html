@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static',filename='img/pdp.jpeg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Browse My Posts</h1>
+            <span class="subheading">Quality contents</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  {% for post in posts %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="/post/{{post.slug}}">
+            <h2 class="post-title">
+              {{post.title}}
+            </h2>
+            <h3 class="post-subtitle">
+              {{post.content[0:150]}}...
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="{{edits['fb_link']}}">Rdx pdp07</a>
+            on {{post.date}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+       
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Next  &rarr;</a>
+          <a class="btn btn-primary float-left" href="#">Previous  &larr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

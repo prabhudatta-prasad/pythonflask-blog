@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+{% block body %}
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+ 
+
+  <body class="text-center">
+
+ <link href="{{url_for('static', filename='css/signin.css')}}" rel="stylesheet">
+ 
+    <form class="form-signin" action="/dashboard" method="post">
+      <img class="mb-4" src="{{url_for('static', filename='img/rdx.jpg')}}" alt="" width="130" height="140">
+      <h1 class="h3 mb-3 font-weight-normal">Admin Login</h1>
+      <label for="inputEmail" class="sr-only">User Name</label>
+      <input type="text" id="inputEmail" class="form-control" placeholder="User Name" name="uname" required autofocus>
+      <p> </p>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="pass" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">All Rights Reserved</p>
+    </form>
+           <!-- Pager -->
+        <div class="clearfix">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
